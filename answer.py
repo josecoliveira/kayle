@@ -1,4 +1,3 @@
-
 def create_matrix(m, n):
     a = []
     for i in range(m):
@@ -41,17 +40,19 @@ def print_matrix(a, m, n):
 
 
 def sum(a, b, m, n):
+    c = create_matrix(m, n)
     for i in range(m):
         for j in range(n):
-            a[i][j] += b[i][j]
-    return a
+            c[i][j] = a[i][j] + b[i][j]
+    return c
 
 
 def multiply_by_scalar(alpha, a, m, n):
+    alpha_a = create_matrix(m, n)
     for i in range(m):
         for j in range(n):
-            a[i][j] *= alpha
-    return a
+            alpha_a[i][j] = alpha * a[i][j]
+    return alpha_a
 
 
 def product(a, b, m, p, n):
