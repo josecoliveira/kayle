@@ -121,7 +121,7 @@ def generate_product_cases():
 
 
 def get_transpose_input(m, n, a):
-    return '3\n{0} {1}\n{2}\n'.format(m, n, a)
+    return '3\n{0} {1}\n{2}\n'.format(m, n, to_string_matrix(a))
 
 
 def get_transpose_output(at):
