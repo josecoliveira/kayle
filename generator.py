@@ -60,7 +60,7 @@ def to_string_matrix(matrix: List[List[int]]) -> str:
 
 
 def get_sum_input(num_lines: int, num_columns: int, a: List[List[int]], b: List[List[int]]) -> str:
-    return '{0}\n{1} {2}\n{3}\n{4}\n'.format(0, num_lines, num_columns, to_string_matrix(a), to_string_matrix(b))
+    return '0\n{0} {1}\n{2}\n{3}\n'.format(num_lines, num_columns, to_string_matrix(a), to_string_matrix(b))
 
 
 def get_sum_output(a: List[List[int]]) -> str:
@@ -80,7 +80,7 @@ def generate_sum_cases() -> None:
 
 
 def get_multiply_input(num_lines: int, num_columns: int, alpha: int, a: List[List[int]]) -> str:
-    return '{0}\n{1} {2}\n{3}\n{4}\n'.format(1, num_lines, num_columns, alpha, to_string_matrix(a))
+    return '1\n{0} {1}\n{2}\n{3}\n'.format(num_lines, num_columns, alpha, to_string_matrix(a))
 
 
 def get_multiply_output(a: List[List[int]]) -> str:
@@ -100,7 +100,7 @@ def generate_multiply_cases():
 
 
 def get_product_input(m, p, n, a, b):
-    return '{0}\n{1} {2} {3}\n{4}\n{5}\n'.format(2, m, p, n, to_string_matrix(a), to_string_matrix(b))
+    return '2\n{0} {1} {2}\n{3}\n{4}\n'.format(m, p, n, to_string_matrix(a), to_string_matrix(b))
 
 
 def get_product_output(a):

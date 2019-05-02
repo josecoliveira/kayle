@@ -24,7 +24,7 @@ def split_to_float(s):
 def read_matrix(m, n):
     a = create_matrix(m, n)
     for i in range(m):
-        a[i] = split_to_integer(input())
+        a[i] = split_to_float(input())
     return a
 
 
@@ -98,7 +98,7 @@ def main():
         n = v[2]
         a = read_matrix(m, p)
         b = read_matrix(p, n)
-        c = product(a, b, m, n, p)
+        c = product(a, b, m, p, n)
         print_matrix(c, m, n)
     elif operation == 3:
         v = split_to_integer(input())

@@ -64,10 +64,6 @@ def compare_matrix(player_matrix: List[List[Num]], judge_matrix: List[List[Num]]
     return True
 
 
-def write_report(report: dict) -> None:
-    csv_columns = ['Name', ]
-
-
 def main():
     all_reports = []
     tests = get_tests()
